@@ -21,8 +21,6 @@ async function start(): Promise<void> {
   console.log(`result = ${result}`);
 }
 
-(async () => {
-  await start();
-})()
+start();
 
 export {};

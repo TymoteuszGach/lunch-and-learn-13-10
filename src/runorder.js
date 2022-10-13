@@ -1,8 +1,8 @@
-function delay(ms: number) {
+function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function run(value: number) {
+async function run(value) {
   console.log("run(" + value + ") - This is synchronous");
   await delay(100);
   console.log("run(" + value + ") - This is asynchronous, because it's after `await`");
